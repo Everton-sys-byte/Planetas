@@ -1,0 +1,153 @@
+body{
+    background: linear-gradient(-45deg, var(--cor1),var(--cor2));
+}
+
+main{
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100vw;
+    min-height: calc(100vh - 40px);
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.container-planeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container-planeta h1{
+    text-shadow: 2px 3px 2px black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 110px;
+    color: white;
+    position: absolute;
+    z-index: 10;
+}
+
+.container-planeta .planeta {
+    animation: animaEscalaImagem 0.8s ease-in-out forwards;
+}
+
+.imageSettings{
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position-Y: center;
+    animation: animaImagem 20s linear infinite;
+}
+
+.information {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    position: relative;
+    color: white;
+}
+
+.information .descricaoTitulo
+{
+    text-align: center;
+    padding: 5px 0px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+.information .Titulo {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.information .desc {
+    font-size: 20px;
+}
+
+
+.information .gravidade_lua{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer{
+    padding: 10px;
+    width: 100vw;
+    height: 40px;
+    background-color: transparent;
+    color:white
+}
+
+footer p{
+    display: block;
+    text-align: center;
+}
+
+.mercury{
+    background-image: url("../Images/mercury.jpg");
+    box-shadow: inset 3px 2px 30px rgb(0, 0, 0, 1), 3px 2px 200px #E5E5E5;
+}
+
+.venus{
+    background-image: url("../Images/venus.webp");
+    box-shadow: inset 3px 2px 30px rgb(0, 0, 0, 1), 3px 2px 200px #d3a567;
+}
+
+.earth {
+    background-image: url("../Images/earth.jpg");
+    box-shadow: inset 3px 2px 30px rgb(0, 0, 0, 1), 3px 2px 200px #001050;
+}
+
+.mars {
+    background-image: url("../Images/mars.jpg");
+    box-shadow: inset 3px 2px 30px rgb(0, 0, 0, 1), 3px 2px 200px #451804;
+}
+
+.jupiter{
+    background-image: url("../Images/jupiter.jpg");
+    box-shadow: inset 3px 2px 30px rgb(0, 0, 0, 1), 3px 2px 200px #c99039;
+}
+
+.saturn {
+    background-image: url("../Images/saturn.png");
+    box-shadow: inset 3px 2px 30px rgb(0, 0, 0, 1), 3px 2px 200px #fae0b9;
+}
+
+.uranus {
+    background-image: url("../Images/uranus.png");
+    box-shadow: inset 3px 2px 30px rgb(0, 0, 0, 1), 3px 2px 200px #c6d3e3;
+}
+
+.neptune {
+    background-image: url("../Images/neptune.jpg");
+    box-shadow: inset 3px 2px 30px rgb(0, 0, 0, 1), 3px 2px 200px #008080;
+}
+
+@keyframes animaImagem {
+    from{
+        background-position-x: 0px;
+    }
+    to{
+        background-position-x: -1024px;
+    }
+}
+
+@keyframes animaEscalaImagem{
+    0%{
+        transform: scale(0)
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+
+:root{
+    --cor1 : #272270;
+    --cor2 : #5246fa;
+    --font1 : 'Anek Latin', sans-serif;
+    --font2 : 'Roboto', sans-serif;
+    --font3 : 'League Gothic', sans-serif;
+    --font4 : 'Anek Latin', sans-serif;
+    --font5 : 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font4);
+}
